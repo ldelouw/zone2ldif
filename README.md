@@ -5,7 +5,7 @@ zone2ldif
 Converts a DNS zone file to a LDIF file which can be used to add
 that zone into IPA
 
-## Usage:
+# Usage:
 
 ## Preparation
 
@@ -22,13 +22,13 @@ dig example.com AXFR @dnsserver.example.com > example.com.zone
 
 ## Import the zone to IPA
 
-Esure the zone does not exist in IPA, if so, delete it or adjust the LDIF file.
+Ensure the zone does not exist in IPA, if so, delete it or adjust the LDIF file.
 
 ```bash
 ldapadd -x -W -D cn="Directory Manager" < example.com.ldif 
 ```
 
 # Note
-This procedure is not supported by Red Hat. As of 2019-01-08, it works with IPA 4.6.4 delivered with RHEL 7.6.
+This procedure is not supported by Red Hat. However,  as of 2019-01-08, it is working with IPA 4.6.4 delivered with RHEL 7.6.
 
 
