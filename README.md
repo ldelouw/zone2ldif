@@ -2,7 +2,7 @@ zone2ldif
 =========
 
 ## Description
-Conversts a DNS zone file to a LDIF file which can be used to add
+Converts a DNS zone file to a LDIF file which can be used to add
 that zone into IPA
 
 ## Usage:
