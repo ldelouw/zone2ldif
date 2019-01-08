@@ -1,15 +1,15 @@
 zone2ldif
 =========
 
-# Description
+## Description
 Conversts a DNS zone file to a LDIF file which can be used to add
 that zone into IPA
 
-# Usage:
+## Usage:
 
 ## Preparation
 
-If you do not have acess to a ISC Bind zone file, i.e. the DNS server is a MS-DNS, you can you dig AXFR to dumpo the zone. Ensure your IP address is allowed to do zone transfers.
+If you do not have acess to a ISC Bind zone file, i.e. the DNS server is a MS-DNS, you can you dig AXFR to dump the zone. Ensure your IP address is allowed to do zone transfers.
 
 ```bash
 dig example.com AXFR @dnsserver.example.com > example.com.zone
